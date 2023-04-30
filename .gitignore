@@ -1,5 +1,0 @@
-# cloned zarf src
-zarf/src/zarf-*/
-
-# signing private key
-signing.key
