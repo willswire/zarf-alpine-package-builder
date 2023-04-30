@@ -1,4 +1,6 @@
-#!/bin/ash
+# Zarf Alpine Package
+
+## Helpful Commands
 
 # install the alpien build sdk
 sudo apk add alpine-sdk
