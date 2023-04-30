@@ -13,7 +13,8 @@ builddir="$srcdir/$pkgname-$pkgver/"
 
 build() {
 	make ensure-ui-build-dir
-	make build-cli-linux CLI_VERSION="v$pkgver" GIT_SHA="6ef3b49"
+	# make build-cli-linux-amd CLI_VERSION="v$pkgver" GIT_SHA="6ef3b49"
+	make build-cli-linux-arm CLI_VERSION="v$pkgver" GIT_SHA="6ef3b49"
 }
 
 check() {
