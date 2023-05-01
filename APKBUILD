@@ -2,9 +2,10 @@
 # Maintainer: William Walker <w_walker@icloud.com>
 pkgname=zarf
 pkgver=0.26.1
-pkgrel=1
+pkgrel=0
 pkgdesc="DevSecOps for Air Gap & Limited-Connection Systems"
-url="https://github.com/defenseunicorns/zarf"
+url="https://zarf.dev/"
+# not useful/supported elsewhere
 arch="aarch64 x86_64"
 license="Apache-2.0"
 makedepends="go nodejs npm"
@@ -25,7 +26,7 @@ build() {
 		-X github.com/defenseunicorns/zarf/src/config.CLIVersion=v$pkgver
 		-X k8s.io/component-base/version.gitVersion=v0.0.0+zarfv$pkgver
 		-X k8s.io/component-base/version.gitCommit=alpine
-		-X k8s.io/component-base/version.buildDate=$(date -u +'%Y-%m-%dT%H:%M:%SZ')
+		-X k8s.io/component-base/version.buildDate=null
 		"
 	go build -ldflags "$ldflags" -o build/zarf main.go
 }
