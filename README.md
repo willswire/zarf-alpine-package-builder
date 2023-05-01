@@ -1,3 +1,19 @@
-# Zarf Alpine Package
+# Zarf Alpine Package Builder
 
-This project provides the development environment (via [Visual Studio Code Development Containers](https://code.visualstudio.com/docs/devcontainers/containers) and configuration files necessary to add [Zarf](https://zarf.dev/) to the testing branch of the Alpine Package Registry. 
+This project provides the development environment (via [Visual Studio Code Development Containers](https://code.visualstudio.com/docs/devcontainers/containers)) and configuration files necessary to add [Zarf](https://zarf.dev/) to the testing branch of the Alpine Package Repository. 
+
+## Building the package
+
+In order to build this package, you must run the following command in your DevContainer shell. The `F` flag forces the build command to be run as root, and the `r` flag specifies that build dependencies should be built recursively:
+
+```
+abuild -Fr
+```
+
+## Running/testing the package
+
+To install your freshly packaged Zarf CLI using `apk`, run the following as root:
+
+```
+apk add --repository /root/packages/workspaces zarf
+```
