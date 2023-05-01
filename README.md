@@ -17,3 +17,12 @@ To install your freshly packaged Zarf CLI using `apk`, run the following as root
 ```
 apk add --repository /root/packages/workspaces zarf
 ```
+
+## Contributing to aports
+
+```
+testing/zarf: new aport # this will be the subject line, followed by a blank line
+
+https://github.com/defenseunicorns/zarf # project homepage
+DevSecOps for Air Gap & Limited-Connection Systems # one line description
+```
