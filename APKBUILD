@@ -23,7 +23,7 @@ build() {
 
 	local ldflags="
 		-X github.com/defenseunicorns/zarf/src/config.CLIVersion=v$pkgver
-		-X k8s.io/component-base/version.gitVersion=v$pkgver+zarf$pkgver
+		-X k8s.io/component-base/version.gitVersion=v0.0.0+zarfv$pkgver
 		-X k8s.io/component-base/version.gitCommit=alpine
 		-X k8s.io/component-base/version.buildDate=$(date -u +'%Y-%m-%dT%H:%M:%SZ')
 		"
