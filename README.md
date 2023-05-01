@@ -20,8 +20,16 @@ apk add --repository /root/packages/workspaces zarf
 
 ## Contributing to aports
 
+Copy the build artifacts to the aports git submodule:
+
 ```
-testing/zarf: new aport # this will be the subject line, followed by a blank line
+cp APKBUILD aports/testing/zarf/APKBUILD
+```
+
+When committing the changes, use the following commit message format:
+
+```
+testing/zarf: upgrade to version x.x.x # this will be the subject line, followed by a blank line
 
 https://github.com/defenseunicorns/zarf # project homepage
 DevSecOps for Air Gap & Limited-Connection Systems # one line description
