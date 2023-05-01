@@ -1,13 +1,3 @@
 # Zarf Alpine Package
 
-## Helpful Commands
-
-# install the alpien build sdk
-sudo apk add alpine-sdk
-
-# generate signing keys
-abuild-keygen -a -i
-
-# subshell with proper groups in devcontainer
-sudo addgroup vscode abuild
-exec sudo su -l $USER
+This project provides the development environment (via [Visual Studio Code Development Containers](https://code.visualstudio.com/docs/devcontainers/containers) and configuration files necessary to add [Zarf](https://zarf.dev/) to the testing branch of the Alpine Package Registry. 
