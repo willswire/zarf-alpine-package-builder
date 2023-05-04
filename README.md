@@ -4,9 +4,10 @@ This project provides the development environment (using [Visual Studio Code Dev
 
 ## Building the package
 
-In order to build this package, you must run the following command in your DevContainer shell. The `F` flag forces the build command to be run as root, and the `r` flag specifies that build dependencies should be built recursively:
+In order to build this package, you must run the following commands in your DevContainer shell. First, generate the checksums unique to your package version. Then, build the package. The `F` flag forces the build command to be run as root, and the `r` flag specifies that build dependencies should be built recursively:
 
 ```bash
+abuild -F checksum
 abuild -Fr
 ```
 
@@ -29,8 +30,5 @@ cp APKBUILD aports/testing/zarf/APKBUILD
 When committing the changes, adhere to the [following commit message format](https://gitlab.alpinelinux.org/alpine/aports/-/blob/506165983e240263c80aa664f8df3c72cf6d63f6/COMMITSTYLE.md). Example below:
 
 ```git
-testing/zarf: upgrade to version x.x.x # this will be the subject line, followed by a blank line
-
-https://github.com/defenseunicorns/zarf # project homepage
-DevSecOps for Air Gap & Limited-Connection Systems # one line description
+testing/zarf: upgrade to version x.x.x
 ```
