@@ -30,5 +30,5 @@ cp APKBUILD aports/testing/zarf/APKBUILD
 When committing the changes, adhere to the [following commit message format](https://gitlab.alpinelinux.org/alpine/aports/-/blob/506165983e240263c80aa664f8df3c72cf6d63f6/COMMITSTYLE.md). Example below:
 
 ```git
-testing/zarf: upgrade to version x.x.x
+testing/zarf: upgrade to x.x.x
 ```
